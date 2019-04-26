@@ -1,4 +1,14 @@
-<script src="js/Event.js"></script>
-<script src="js/Caravan.js"></script>
-<script src="js/UI.js"></script>
-<script src="js/Game.js"></script>
+var OregonH = OregonH || {};
+ 
+OregonH.UI = {};
+ 
+//show a notification in the message area
+OregonH.UI.notify = function(message, type){
+  console.log(message + ' - ' + type);
+};
+ 
+ 
+//refresh visual caravan stats
+OregonH.UI.refreshStats = function() {
+  console.log(this.caravan);
+}
